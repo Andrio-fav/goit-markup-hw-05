@@ -215,7 +215,6 @@ img {
     align-items: center;
     justify-content: center;
     height: 112px;
-    padding: 24px 100px;
     max-width: 100%;
     background-color: #f4f4fd;
     border: 1px solid #8e8f99;
@@ -330,7 +329,6 @@ img {
 
 .tctl {
     line-height: 0;
-    padding: 12px 12px;
     border-radius: 50%;
     background-color: #4d5ae5;
     display: flex;
