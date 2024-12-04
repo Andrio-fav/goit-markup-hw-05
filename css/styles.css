@@ -996,7 +996,7 @@ img {
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .chi[type="checkbox"]:checked+label .mchtxt span {
+  .input[type="checkbox"]:checked+ .mchtxt .chicsp {
     background-color: #404bbf;
     fill: #f4f4fd;
     border: none;
