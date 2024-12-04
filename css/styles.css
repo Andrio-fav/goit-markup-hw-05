@@ -842,7 +842,7 @@ img {
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .mdl {
+  .modal {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -857,11 +857,11 @@ img {
     padding: 72px 24px 24px 24px;
   }
   
-  .backdrop.is-hidden .mdl {
+  .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
   }
   
-  .mcbtn {
+  .modal-close-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -879,14 +879,14 @@ img {
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .mcbtn:hover,
-  .mcbtn:focus {
+  .modal-close-btn:hover,
+  .modal-close-btn:focus {
     fill: #ffffff;
     background-color: #404bbf;
     border: none;
   }
   
-  .cbtn {
+  .close-btn {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
@@ -896,7 +896,7 @@ img {
     pointer-events: none;
   }
   
-  .mttl {
+  .modal-title {
     color: #2e2f42;
     text-align: center;
     font-weight: 500;
@@ -905,11 +905,11 @@ img {
     margin-bottom: 16px;
   }
   
-  .mlw {
+  .modal-label-wrap {
     margin-bottom: 8px;
   }
   
-  .mfl {
+  .modal-form-label {
     color: #8e8f99;
     font-size: 12px;
     font-weight: 400;
@@ -919,7 +919,7 @@ img {
     display: block;
   }
   
-  .mfi {
+  .modal-form-input {
     width: 100%;
     height: 40px;
     border-radius: 4px;
@@ -931,20 +931,20 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .mfi:focus {
+  .modal-form-input:focus {
     border-color: #4d5ae5;
   }
   
-  .mfi:focus + .mfic {
+  .modal-form-input:focus + .modal-form-icon {
     fill: #4d5ae5;
   }
   
-  .miw {
+  .modal-input-wrap {
     position: relative;
     margin-bottom: 8px;
   }
   
-  .mfic {
+  .modal-form-icon {
     fill: #2e2f42;
     position: absolute;
     left: 16px;
@@ -953,11 +953,11 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .txtareaw {
+  .textarea-wrap {
     margin-bottom: 16px;
   }
   
-  .mftxtarea {
+  .modal-form-textarea {
     width: 100%;
     height: 120px;
     padding: 8px 16px;
@@ -973,15 +973,15 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .mftxtarea:focus {
+  .modal-form-textarea:focus {
     border-color: #4d5ae5;
   }
   
-  .mchbw {
+  .modal-checkbox-wrap {
     margin-bottom: 24px;
   }
   
-  .chicsp {
+  .check-icon-span {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -996,13 +996,13 @@ img {
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .input[type="checkbox"]:checked+ .mchtxt .chicsp {
+  .check-input:checked + .modal-check-text span {
     background-color: #404bbf;
     fill: #f4f4fd;
     border: none;
   }
   
-  .mchtxt {
+  .modal-check-text {
     color: #8e8f99;
     font-size: 12px;
     font-weight: 400;
@@ -1010,7 +1010,7 @@ img {
     letter-spacing: 0.04em;
   }
   
-  .mchl {
+  .modal-check-link {
     color: #4d5ae5;
     font-size: 12px;
     font-weight: 400;
@@ -1019,7 +1019,7 @@ img {
     text-decoration-line: underline;
   }
   
-  .fsbtn {
+  .form-send-btn {
     background-color: #4d5ae5;
     color: #ffffff;
     text-align: center;
@@ -1039,7 +1039,7 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .fsbtn:hover,
-  .fsbtn:focus {
+  .form-send-btn:hover,
+  .form-send-btn:focus {
     background-color: #404bbf;
   }

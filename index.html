@@ -367,58 +367,88 @@
         
     </footer>
     <div class="backdrop is-hidden" data-modal>
-        <div class="mdl">
-            <button type="button" class="mcbtn">
-                <svg class="cbtn" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close-black"></use>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="close-btn" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-btn"></use>
                 </svg>
             </button>
-            <p class="mttl">Leave your contacts and we will call you back</p>
-            <form class="mform">
-                <div class="mlw">
-                    <label for="user-name" class="mfl"> Name </label>
-                    <div class="miw">
-                      <input class="mfi" type="text" name="user-name" id="user-name" autofocus/>
-                      <svg class="mfic" width="18" height="24">
-                        <use href="./images/icons.svg#icon-person-black"></use>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="modal-label-wrap">
+                    <label for="user-name" class="modal-form-label"> Name </label>
+                    <div class="modal-input-wrap">
+                      <input
+                        class="modal-form-input"
+                        type="text"
+                        name="user-name"
+                        id="user-name"
+                        autofocus
+                      />
+                      <svg class="modal-form-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-usr-name"></use>
                       </svg>
                     </div>
-                </div>
-                <div class="mlw">
-                    <label for="usr_tel" class="mfl">Phone</label>
-                    <div class="miw">
-                      <input class="mfi" type="tel" name="usr_tel" id="usr_tel"/>
-                      <svg class="mfic" width="18" height="24">
-                        <use href="./images/icons.svg#icon-phone-black"></use>
+                  </div>
+        
+                  <div class="modal-label-wrap">
+                    <label for="usr_tel" class="modal-form-label">Phone</label>
+                    <div class="modal-input-wrap">
+                      <input
+                        class="modal-form-input"
+                        type="tel"
+                        name="usr_tel"
+                        id="usr_tel"
+                      />
+                      <svg class="modal-form-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-usr-tel"></use>
                       </svg>
                     </div>
-                </div>
-                <div class="mlw">
-                    <label for="usr_email" class="mfl">Email</label>
-                    <div class="miw">
-                      <input class="mfi" type="email" name="usr_email" id="usr_email"/>
-                      <svg class="mfic" width="18" height="24">
-                        <use href="./images/icons.svg#icon-email-black"></use>
+                  </div>
+        
+                  <div class="modal-label-wrap">
+                    <label for="usr_email" class="modal-form-label">Email</label>
+                    <div class="modal-input-wrap">
+                      <input
+                        class="modal-form-input"
+                        type="email"
+                        name="usr_email"
+                        id="usr_email"
+                      />
+                      <svg class="modal-form-icon" width="18" height="24">
+                        <use href="./images/icons.svg#icon-usr-mail"></use>
                       </svg>
                     </div>
-                </div>
-                <div class="txtareaw">
-                    <label for="user-comment" class="mfl">Comment</label>
-                    <textarea class="mftxtarea" name="user-comment" placeholder="Text input" id="user-comment"></textarea>
-                </div>
-                <div class="mchbw">
-                    <input class="visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true"/>
-                    <label for="user-privacy" class="mchtxt">
-                        <span class="chicsp">
-                            <svg class="check-icon" width="10" height="8">
-                                <use href="./images/icons.svg#icon-Vector"></use>
-                            </svg>
-                        </span>
-                        I accept the terms and conditions of the
-                        <a href="" class="mchl">Privacy Policy</a>
-                    </label>
-                </div>
-                <button class="fsbtn" type="submit">Send</button>
+                  </div>
+        
+                  <div class="textarea-wrap">
+                    <label for="user-comment" class="modal-form-label">Comment</label>
+                    <textarea
+                      class="modal-form-textarea"
+                      name="user-comment"
+                      placeholder="Text input"
+                      id="user-comment"
+                    ></textarea>
+                  </div>
+        
+                  <div class="modal-checkbox-wrap">
+                    <input
+                      class="check-input visually-hidden"
+                      type="checkbox"
+                      name="user-privacy"
+                      id="user-privacy"
+                      value="true"
+                    />
+                    <label for="user-privacy" class="modal-check-text">
+                      <span class="check-icon-span">
+                        <svg class="check-icon" width="10" height="8">
+                          <use href="./images/icons.svg#icon-check"></use>
+                        </svg>
+                      </span>
+                      I accept the terms and conditions of the
+                      <a href="" class="modal-check-link">Privacy Policy</a></label>
+                  </div>
+                  <button class="form-send-btn" type="submit">Send</button>
             </form>
         </div>
     </div>
